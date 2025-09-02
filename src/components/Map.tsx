@@ -121,6 +121,26 @@ const Map = () => {
 </MapContainer>
 
         )}
+        {/* Legend Box */}
+<div
+  style={{
+    position: 'absolute',
+    top: 30,
+    right: 5,
+    background: 'white',
+    padding: '10px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+    zIndex: 1000,
+    fontSize: '0.9rem'
+  }}
+>
+  <strong>Magnitude Legend</strong>
+  <div><img src="https://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png" width="14" /> 5.0+</div>
+  <div><img src="https://maps.gstatic.com/mapfiles/ms2/micons/orange-dot.png" width="14" /> 3.0 – 4.9</div>
+  <div><img src="https://maps.gstatic.com/mapfiles/ms2/micons/yellow-dot.png" width="14" /> &lt; 3.0</div>
+</div>
+
       </div>
 
       <div className="sidebar">
